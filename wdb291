@@ -7,11 +7,11 @@ app.get("/results", function(req, res){
 	.then(function (response) {
 		console.log(response.data.Search);
 		res.send(response.data.Search);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
+  	})
+	.catch(function (error) {
+    	// handle error
+    	console.log(error);
+  	})
 });
 	
 //setting up the app to listen over PORT 3000
